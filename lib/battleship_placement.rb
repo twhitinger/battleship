@@ -19,9 +19,7 @@ def ending_computer_position_large
 	letter_end = [1].map{[x-2,x][rand(2)]}.join.to_i.chr
   elsif x == 66
   letter_end = [1].map{[x+2,x][rand(2)]}.join.to_i.chr
-
   end
-
  x = starting_coord_begin.values.join.to_i
 
   if letter_end != starting_coord_begin.keys[0]
@@ -39,9 +37,6 @@ def ending_computer_position_large
   ending_coord = {letter_end => number_end}
 
   ending_computer_position_large if ending_coord == starting_coord_begin
-
-  puts starting_coord_begin
-  puts ending_coord
 
   end
 

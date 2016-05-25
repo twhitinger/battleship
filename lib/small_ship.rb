@@ -35,8 +35,6 @@ class SmallShip
 
     ending_computer_position if ending_coord == starting_coord_begin
 
-    puts "I am the small ship beg #{starting_coord_begin}"
-    puts "I am the small ship end #{ending_coord}"
     [starting_coord_begin,ending_coord]
 
   end

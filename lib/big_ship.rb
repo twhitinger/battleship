@@ -39,9 +39,6 @@ class BigShip
 
     ending_computer_position_large if ending_coord == starting_coord_begin
 
-    puts "I am the large ship beg #{starting_coord_begin}"
-    puts "I am the large ship end #{ending_coord}"
-
     [starting_coord_begin,ending_coord]
 
   end
