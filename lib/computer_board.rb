@@ -1,5 +1,5 @@
 require 'pry'
-require "./computer_game_flow.rb"
+require_relative "../lib/computer_game_flow"
 class ComputerBoard
 
 

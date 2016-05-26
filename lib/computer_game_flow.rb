@@ -30,31 +30,3 @@ class ComputerGameFlow
     values[1].keys[0] + values[1].values[0].to_s]]
   end
 end
-
-
-
-
-
-# (number_range.include?(values.map{|x|x.values}.flatten[0]) && letter_range.include?(values.map{|x|x.keys}.flatten[0])) || (number_range.include?(values.map{|x|x.values}.flatten[1]) && letter_range.include?(values.map{|x|x.keys}.flatten[1]))
-
-
-
-
-
-# # def validation_check
-# #   while
-# # end
-#
-# def number_range
-# range = ending_computer_position_large.sort_by {|hsh|hsh.values}.map{|x| x.values}.flatten
-# [*range[0]..range[1]]
-# end
-#
-# def letter_range
-#   range = ending_computer_position_large.sort_by {|hsh|hsh.keys}.map{|x| x.keys}.flatten
-#   (range[0]..range[1]).to_a
-# end
-#
-# # while number_range.include?(starting_coord_begin.values[0]) && letter_range.include?(starting_coord_begin.keys[0])
-# #   computer_two_position.ending_computer_position
-# # end

@@ -11,7 +11,7 @@ module FlowControl
       input = gets.chomp.downcase
       if input == "p" || input == "play"
         puts Dialogue.instruct
-        puts Dialogue.after_play
+        
         gameplay = GamePlay.new
         gameplay.run
 

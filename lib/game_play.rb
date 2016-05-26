@@ -1,4 +1,4 @@
-require './user_board'
+require_relative './user_board'
 
 class GamePlay
   def run
@@ -17,19 +17,18 @@ class GamePlay
       array_display = Array.new(16)
 
       while counter < 5
-        p @game_board
+
         p array_display
 
-
         array_index = ""
-        while array_index.length != 2
+        while array_index.length != 2 || lookup_table.find{|x| x[array_index] } == nil
           puts "Enter coordinate guess ie. A1"
-          array_index = gets.chomp
+          array_index = gets.chomp.upcase
         end
 
         array_index = lookup_table.find{|x|x[array_index]}.values[0]
 
-        if @game_board[array_index] == true
+        if @game_board[array_index] == true && array_display[array_index] != "H"
           array_display[array_index] = "H"
           puts "You done hit my battleShip"
           counter += 1

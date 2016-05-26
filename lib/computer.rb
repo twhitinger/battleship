@@ -37,8 +37,7 @@ class Computer
 
     ending_computer_position if ending_coord == starting_coord_begin
 
-    puts "I am the small ship beg #{starting_coord_begin}"
-    puts "I am the small ship end #{ending_coord}"
+
     [starting_coord_begin,ending_coord]
 
   end
@@ -84,10 +83,7 @@ def ending_computer_position_large
   ending_coord = {letter_end => number_end}
 
   ending_computer_position_large if ending_coord == starting_coord_begin
-
-  puts "I am the large ship beg #{starting_coord_begin}"
-  puts "I am the large ship end #{ending_coord}"
-
+  
   [starting_coord_begin,ending_coord]
 
   end
